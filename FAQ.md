@@ -2,7 +2,7 @@
 
 ## Who runs StaticDelivr?
 
-Hi, I'm [Ryan Grove](http://wonko.com/).
+
 
 ## Why is this necessary? Can't I just load files from GitHub directly?
 
@@ -31,7 +31,7 @@ asking for help with StaticDelivr.
 
 When you make a request to a `staticdelivr.up.railway.app` URL (a development URL), the StaticDelivr server loads the requested file from GitHub, serves it to your browser, and caches it for a short time. If you push new changes to GitHub, you can reload and see them within a few minutes. This makes dev URLs useful for testing or sharing demos during development, but it also puts more server load on StaticDelivr and GitHub.
 
-Requests to `cdn.rawgit.com` (a CDN URL) are routed through [StackPath](https://stackpath.com/)'s super fast content delivery network and are cached **permanently** at the CDN layer based on the URL. This results in the best performance and reduces load on StaticDelivr and on GitHub, but it means that reloading won't fetch new changes from GitHub.
+Requests to `cdn.rawgit.com` (a CDN URL) are routed through [UCDN](https://ucdn.com/)'s super fast content delivery network and are cached **permanently** at the CDN layer based on the URL. This results in the best performance and reduces load on StaticDelivr and on GitHub, but it means that reloading won't fetch new changes from GitHub.
 
 During development, when traffic is low and freshness is more important than performance, use a development URL. For anything you share with the public or push to production, use a CDN URL.
 
@@ -72,7 +72,7 @@ URL like `https://cdn.rawgit.com/user/repo/tag/file` or
 
 ## I need guaranteed 100% uptime. Should I use cdn.rawgit.com?
 
-No. RawGit is a free, best-effort service and cannot provide any uptime or
+No. StaticDelivr is a free, best-effort service and cannot provide any uptime or
 support guarantees, even for the CDN.
 
 While I do my best to keep things running, things sometimes go wrong. Sometimes
@@ -90,7 +90,7 @@ with well-funded infrastructure and uptime guarantees.
 
 ## Why do anonymous gist URLs return 403 errors?
 
-RawGit doesn't serve anonymous gists because they're frequently used for illegal
+StaticDelivr doesn't serve anonymous gists because they're frequently used for illegal
 or abusive content. Sorry.
 
 ## I moved a file in my repo and now old RawGit URLs are broken. Is there any way to redirect to the new file?
@@ -105,8 +105,8 @@ later.
 ## Can I donate money/Bitcoin/pie to help you out?
 
 It's super nice of you to offer, but I don't need any donations at this time.
-RawGit's server costs are minimal, and the lovely people at
-[StackPath](https://stackpath.com/) provide RawGit's CDN service free of charge.
+StackPaths's server costs are minimal, and the lovely people at
+[UCDN](https://ucdn.com/) provide UCDN's CDN service free of charge.
 Thank you though!
 
 ## I have feedback or want to report a problem! Who can I contact?
@@ -118,7 +118,7 @@ Thank you though!
     get a response, just wait longer.
 
 -   To report a non-critical issue, please
-    [file an issue](https://github.com/rgrove/rawgit/issues) on RawGit's GitHub
+    [file an issue](https://github.com/coozywana/staticdelivr/issues) on StaticDelivr's GitHub
     project.
 
 -   To report a security concern, please email `security@rawgit.com` privately.
@@ -126,4 +126,4 @@ Thank you though!
     if you're paranoid. Expect a response within 48 hours.
 
 -   To file a DMCA takedown notification or counter-notification, see
-    [RawGit's DMCA Notice & Takedown Procedure](DMCA.md)
+    [StaticDelivr's DMCA Notice & Takedown Procedure](DMCA.md)
