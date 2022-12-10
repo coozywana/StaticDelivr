@@ -8,13 +8,13 @@
 <meta name="description" content="StaticDelivr serves raw files directly from GitHub with proper Content-Type headers.">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:400,700">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
-<link rel="stylesheet" href="{{{assetUrl "/css/new.css"}}}">
+<link rel="stylesheet" href="/css/new.css">
 <link rel="icon" href="/img/logo.png">
 </head>
 
 <header class="hd">
   <h1 class="title">
-    <a href="/"><img class="logo" src="{{{assetUrl "/img/logo.png"}}}" alt="" role="presentation"></a>
+    <a href="/"><img class="logo" src="/img/logo.png" alt="" role="presentation"></a>
     StaticDelivr
   </h1>
 
