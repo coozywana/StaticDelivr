@@ -1,0 +1,105 @@
+<!doctype html>
+<head>
+<html lang="en">
+<meta charset="utf-8">
+<title>StaticDelivr</title>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="StaticDelivr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="StaticDelivr serves raw files directly from GitHub with proper Content-Type headers.">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:400,700">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+<link rel="stylesheet" href="{{{assetUrl "/css/new.css"}}}">
+<link rel="icon" href="/img/logo.png">
+</head>
+
+<header class="hd">
+  <h1 class="title">
+    <a href="/"><img class="logo" src="{{{assetUrl "/img/logo.png"}}}" alt="" role="presentation"></a>
+    StaticDelivr
+  </h1>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://github.com/coozywana/staticdelivr/blob/main/FAQ.md">FAQ</a></li>
+      <li><a href="https://github.com/coozywana/staticdelivr">Source</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+<div class="bd">
+      <p class="hero">
+  Switching from GitHub to StaticDelivr
+</p>
+<p class="hero-mini"> 
+  StaticDelivr is a free, fast CDN for GitHub.
+</p>
+  <div class="box">
+
+
+  <div class="content">
+
+<img class="github-logo" src="/img/github.png" alt="github logo" width="100" height="50">
+<div class="url-helper">
+  <div class="url-paste">
+    <p id="url-form">
+      <label for="url" class="offscreen">GitHub URL:</label>
+      <input id="url" class="url" type="url" value=""
+             placeholder="Paste a GitHub file or gist URL here." autofocus tabindex="1">
+    </p>
+  </div>
+<img class="staticdelivr-logo" src="/img/logo.png" alt="logo" width="50" height="50">
+
+  <div class="column">
+    <h2>Use this URL in <strong>production</strong></h2>
+
+    <p class="url-container">
+      <input id="url-prod" class="url" placeholder="https://cdn.rawgit.com/user/repo/tag/file" readonly tabindex="2">
+      <button id="url-prod-copy" class="url-copy-button" data-clipboard-target="#url-prod" title="Copy URL" disabled>
+        <img src="/img/clippy.svg" alt="">
+      </button>
+    </p>
+
+  
+  </div>
+
+  <div class="column">
+    <h2>Use this URL for <strong>development</strong></h2>
+
+    <p class="url-container">
+      <input id="url-dev" class="url" placeholder="https://staticdelivr.up.railway.app/user/repo/branch/file" readonly tabindex="3">
+      <button id="url-dev-copy" class="url-copy-button" data-clipboard-target="#url-dev" title="Copy URL" disabled>
+        <img src="/img/clippy.svg" alt="">
+      </button>
+    </p>
+
+  
+  </div>
+</div>
+
+<script>
+var cdnDomain = 'cdn.rawgit.com';
+var devDomain = 'staticdelivr.up.railway.app';
+</script>
+
+<script src="https://cdn.rawgit.com/cdnjs/cdnjs/0971b44/ajax/libs/fetch/2.0.1/fetch.min.js"></script>
+<script src="https://cdn.rawgit.com/zenorocha/document.queryCommandSupported/v1.0.0/dist/queryCommandSupported.min.js"></script>
+<script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.10/dist/clipboard.min.js"></script>
+<script src="/js/url-formatter.js"></script>
+
+  </div>
+</div>
+
+</div>
+
+
+<footer class="ft">
+  <p>
+    &copy; 2022 <a href="http://coozywana.ga/">Coozywana</a>.
+    Follow <a href="/">@StaticDelivr</a> on Twitter for news and status updates.<br>
+  </p>
+</footer>
