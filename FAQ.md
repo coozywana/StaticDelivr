@@ -104,10 +104,7 @@ later.
 
 ## Can I donate money/Bitcoin/pie to help you out?
 
-It's super nice of you to offer, but I don't need any donations at this time.
-StackPaths's server costs are minimal, and the lovely people at
-[UCDN](https://ucdn.com/) provide UCDN's CDN service free of charge.
-Thank you though!
+
 
 ## I have feedback or want to report a problem! Who can I contact?
 
