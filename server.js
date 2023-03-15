@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static('static'));
+
 //Get
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
@@ -43,6 +44,8 @@ app.get('/sponsors', (req, res) => {
 app.get('/stats', (req, res) => {
   res.sendFile(__dirname + '/views/stats.html');
 });
+
+
 //Port
 app.listen(port, () => {
   console.log(`StaticDelivr homepage is running at http://localhost:${port}`);

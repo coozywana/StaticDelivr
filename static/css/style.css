@@ -354,6 +354,7 @@ p {
   align-items: center;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 .map-container img {
