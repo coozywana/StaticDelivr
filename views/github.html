@@ -68,13 +68,23 @@
       </div>
     </nav>
 <!--Content-->
+<div class="github-form">
+  <label for="github-url">Enter GitHub URL:</label>
+  <input type="text" id="github-url">
+  <button type="button" onclick="convertUrl()">Convert</button>
+  <br>
+  <br>
+  <label for="cdn-url">StaticDelivr URL:</label>
+  <input type="text" id="cdn-url" readonly>
+  <br>
+  <br>
+  <div id="error-message" style="color: red"></div>
+</div>
 
 
 
 
-
-
-
+    <script src="/js/github.js"></script>
     <script src="https://cdn.staticdelivr.com/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
