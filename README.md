@@ -1,5 +1,6 @@
 ## StaticDelivr
 StaticDelivr is a free and open-source CDN for your static assets. It allows you to accelerate your website by serving your static files from a globally-distributed network of servers.
+https://staticdelivr.com
 
 ## Contributing
 We welcome contributions from anyone and everyone. If you're interested in contributing, please fork this repository and submit a pull request with your changes.
